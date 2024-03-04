@@ -1,0 +1,66 @@
+body {
+    background-color: #000;
+    color: #fff;
+  }
+  
+  header {
+    text-align: center;
+  }
+  
+  header a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  header a:hover {
+    text-decoration: underline;
+  }
+  
+  .mainPage {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+  }
+  .container {
+    text-align: center;
+    flex: 1;
+  }
+  input {
+    padding: 8px;
+    margin: 5px;
+    border-radius: 5px;
+  }
+  button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  button:hover {
+    background-color: #0056b3;
+  }
+  .success {
+    background-color: #060;
+    border-radius: 8px;
+    padding: 12px 48px;
+  }
+  .error {
+    background-color: #600;
+    border-radius: 8px;
+    padding: 12px 48px;
+  }
+  .token {
+    font-weight: bold;
+    font-family: "Courier New", Courier, monospace;
+  
+    border: 1px dotted;
+    padding: 6px;
+    margin-left: 8px;
+  }

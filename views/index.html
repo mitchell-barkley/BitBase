@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BitBase Membership</title>
+    <link rel="stylesheet" href="/resources/style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>BITBASE</h1>
+    </header>
+    <hr width="100%" />
+    <div class="mainPage">
+      <div class="container">
+        <h2>Sign Up with BitBase</h2>
+        <form id="signUpForm" action="/new" method="POST">
+          <label for="username">Enter your username:</label>
+          <input type="text" id="username" name="username" required />
+          <button type="submit">Generate Token</button>
+        </form>
+      </div>
+
+      <div class="container">
+        <h2>Log In to BitBase</h2>
+        <form id="logInForm" action="/fetch">
+          <label for="username">Enter your username:</label>
+          <input type="text" id="username" name="username" required />
+          <button type="submit">Generate Token</button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BitBase Membership</title>
+    <link rel="stylesheet" href="/resources/style.css" />
+  </head>
+  <body>
+    <header>
+      <a href="/"><h1>BITBASE</h1></a>
+    </header>
+    <hr width="100%" />
+    <div class="mainPage">
+      <% if (!username) { %>
+      <div class="error">No user was specified.</div>
+      <% } else if (!token) { %>
+      <div class="error">
+        The user token for <%= username %> does not exist, or it has expired.
+      </div>
+      <% } else { %>
+      <p>
+        The token for user <%= token.username %> is
+        <span class="token"><%= token.token %></span>
+      </p>
+      <% } %>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BitBase Membership</title>
+    <link rel="stylesheet" href="/resources/style.css" />
+  </head>
+  <body>
+    <header>
+      <a href="/"><h1>BITBASE</h1></a>
+    </header>
+    <hr width="100%" />
+    <div class="mainPage">
+      <% if (token.status == "ok") { %>
+      <div class="success">Token was successfully created!</div>
+      <p>
+        The token for new user <%= token.username %> is
+        <span class="token"><%= token.token %></span>
+      </p>
+      <% } %> <% if (token.status == "error") { %>
+      <div class="error">There was an error with token creation</div>
+      <p><%= token.message %></p>
+      <% } %>
+    </div>
+  </body>
+</html>
